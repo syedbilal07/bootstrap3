@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Grid Examples</title>
+	</head>
+		<body>
+		<h1>ClearFix In Bootstrap</h1>
+		<p>Clear floats (with the .clearfix class) at specific breakpoints to prevent strange wrapping with uneven content:</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-3" style="background-color:gold;">
+				Column 1<br />
+				Resize the browser window to see the effect. Also try to remove the div clearfix line and see what happens. 
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color:green;">
+				COLUMN 2
+				</div>
+				  <!-- REMOVE CLEARFIX & SEE ALL THE THREE DIVS WILL PACK TOGETHER -->
+				<div class="clearfix visible-xs"></div>
+				<div class="col-xs-6 col-sm-3" style="background-color:silver;">
+				COLUMN 3
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color:aqua;">
+				COLUMN 4
+				</div>
+			</div>
+		</div>
+		<h1>Push & Pull</h1>
+		<p>Change the order of the grid columns with .col-md-push-* and .col-md-pull-* classes:</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-push-8" style="background-color:gold;">
+					<p>.col-sm-8 .col-sm-pull-4</p>
+				</div>
+				<div class="col-sm-8 col-sm-pull-4" style="background-color:silver;">
+					<p>.col-sm-4 .col-sm-push-8</p>
+				</div>
+			</div>
+		</div>
+		</body>
+</html>
+	

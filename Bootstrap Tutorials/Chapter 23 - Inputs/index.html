@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Form Inputs</title>
+	</head>
+		<body>
+		<h2>Basic Form</h2>
+		<form role="form">
+			<div class="form-group">
+				<label for="name"  class="control-label">Name:</label>
+				<input type="text" class="form-control" id="name"></input>
+			</div>
+			<div class="form-group">
+				<label for="password" class="control-label">Password:</label>
+				<input type="text" class="form-control" id="password"></input>			
+			</div>
+		</form>
+		<h2>Bootstrap Textarea</h2>
+		<form role="form">
+			<div class="form-control">
+			<label for="comment" class="control-label">Comments:</label>
+			<textarea class="form-control" rows="5" id="textbox"></textarea>
+			</div>
+		</form>
+		<br /><br /><br /><br /><br /><br /><br />
+		<h2>Bootstrap Checkboxes</h2>
+		<form role="form">
+			<div class="form-group">
+				<div class="checkbox">
+				<label for="checkbox"><input type="checkbox" id="checkbox1" class="form-control" disabled>Option 1</input></label>
+				</div>
+				<div class="checkbox">
+				<label for="checkbox"><input type="checkbox" id="checkbox1" class="form-control">Option 2</input></label>
+				</div>
+				<div class="checkbox">
+				<label for="checkbox"><input type="checkbox" id="checkbox1" class="form-control">Option 3</input></label>
+				</div>
+			</div>
+		</form>
+		<h2>Bootstrap Inline Checkboxes</h2>
+		<form role="form">
+			<div class="form-group">
+				<div class="checkbox-inline">
+				<label for="checkbox"><input type="checkbox" disabled>Option 1</input></label>
+				</div>
+				<div class="checkbox-inline">
+				<label for="checkbox"><input type="checkbox">Option 2</input></label>
+				</div>
+				<div class="checkbox-inline">
+				<label for="checkbox"><input type="checkbox">Option 3</input></label>
+				</div>
+			</div>
+		</form>
+		<h2>Bootstrap Radio Buttons</h2>
+		<form role="form">
+			<div class="form-group">
+				<div class="radio">
+					<label for="radio"><input type="radio" id="radio1">Option 1</input></label>
+				</div>
+				<div class="radio">
+					<label for="radio"><input type="radio" id="radio2" disabled>Option 2</input></label>
+				</div>
+				<div class="radio">
+					<label for="radio"><input type="radio" id="radio3">Option 3</input></label>
+				</div>
+			</div>
+		</form>
+		<h2>Bootstrap Inline Radio Buttons</h2>
+		<form role="form">
+			<div class="form-group">
+				<div class="radio-inline">
+					<label for="radio"><input type="radio" id="radio1">Option 1</input></label>
+				</div>
+				<div class="radio-inline">
+					<label for="radio"><input type="radio" id="radio2" disabled>Option 2</input></label>
+				</div>
+				<div class="radio-inline">
+					<label for="radio"><input type="radio" id="radio3">Option 3</input></label>
+				</div>
+			</div>
+		</form>
+		<h2>Bootstrap Select List</h2>
+		<form role="form">
+			<div class="form-group">
+				<label for="select">Select List:</label>
+				<select class="form-control" id="select">
+				<option>HTC</option>
+				<option>Samsung</option>
+				<option>Apple</option>
+				<option>Motorolla</option>
+				</select>
+			</div>
+		</form>
+		</body>
+</html>
+	

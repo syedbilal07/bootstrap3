@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Scrollspy & Affix - Horizontal</title>
+	<style>
+	  body {
+      position: relative; 
+  }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+	#home
+	{
+		padding-top:50px;height:500px;color:#fff;background-color:#1E88E5;
+	}
+	#products
+	{
+		padding-top:50px;height:500px;color:#fff;background-color:#673ab7;
+	}
+	#services
+	{
+		padding-top:50px;height:500px;color:#fff;background-color:#ff9800;
+	}
+	#contact
+	{
+		padding-top:50px;height:500px;color:#fff;background-color:#00bcd4;
+	}
+	#about
+	{
+		padding-top:50px;height:500px;color:#fff;background-color:#009688;
+	}
+	</style>
+	</head>
+		<body data-spy="scroll" data-target=".navbar" data-offset-top="90">
+		<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+			<h1>Scrollspy & Affix Example</h1>
+			<h3>Fixed Navigation Bar On Scroll</h3>
+			<p>Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
+			<p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar
+			   are automatically updated based on scroll position.</p>
+		</div>
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="190">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a class="navbar-brand" href="#">HTC</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNav">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#products">Products</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="#about">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+			<div id="home" class="container-fluid">
+				<h1>Home</h1>
+				<p>This Is Home Page</p>
+			</div>
+			<div id="products" class="container-fluid">
+				<h1>Products</h1>
+				<p>This Is Products Page</p>
+			</div>
+			<div id="services" class="container-fluid">
+				<h1>Services</h1>
+				<p>This Is Services Page</p>
+			</div>
+			<div id="contact" class="container-fluid">
+				<h1>Contact Us</h1>
+				<p>This Is Contact Us Page</p>
+			</div>
+			<div id="about" class="container-fluid">
+				<h1>About Us</h1>
+				<p>This Is About Us Page</p>
+			</div>
+		</body>
+</html>
+	

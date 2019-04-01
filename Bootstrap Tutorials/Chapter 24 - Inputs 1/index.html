@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bootstrap More Form Inputs</title>
+	</head>
+		<body>
+	<div class="container">
+		<h2>Static Control</h2>
+		<form role="form" class="form-horizontal">
+			<div class="form-group">
+				<label for="email" class="control-label col-sm-2">Email:</label>
+				<div class="col-sm-10">
+					<p class="form-control-static">someone@example.com</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password" class="control-label col-sm-2">Password:</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="password"></input>
+					</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="button" class="btn btn-default">Submit</button>
+				</div>
+			</div>
+		</form>
+		<h2>Horizontal Control States</h2>
+		<form role="form" class="form-horizontal">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Focus On Click:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="FocusedInput" placeholder="Click Here!"></input>
+					</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Disabled Input:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="DisabledInput" disabled placeholder="Disabled Input Here!"></input>
+					</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Disabled Select List:</label> 
+					<div class="col-sm-10">
+						<select class="form-control" disabled>
+							<option>HTC</option>
+							<option>Samsung</option>
+							<option>Motorolla</option>
+						</select>
+					</div>
+			</div>
+			<div class="form-group has-success has-feedback">
+				<label for="success-input-with-glyphicon" class="control-label col-sm-2">Input With Success & Glyphicon</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="success-input">
+							<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+						</input>
+					</div>
+			</div>
+			<div class="form-group has-warning has-feedback">
+				<label for="warning-input-with-glyphicon" class="col-sm-2 control-label">Input With Warning & Glyphicon</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="warning-input">
+							<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+						</input>
+					</div>
+			</div>
+			<div class="form-group has-error has-feedback">
+				<label for="error-input-with-glyphicon" class="col-sm-2 control-label">Input With Error & Glyphicon</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="error-input">
+							<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+						</input>
+					</div>
+			</div>
+		</form>
+	</div>
+		</body>
+</html>
+	

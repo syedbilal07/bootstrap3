@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Scrollspy & Affix - Horizontal</title>
+	<style>
+		.affix
+		{
+			top:0;
+			width:100%;
+		}
+		#home
+		{
+			padding-top:50px;
+			height:500px;
+			background-color:#1E88E5;
+			color:#fff;
+		}
+		#services
+		{
+			padding-top:50px;
+			height:500px;
+			background-color:#673ab7;
+			color:#fff;
+		}
+		#products
+		{
+			padding-top:50px;
+			height:500px;
+			background-color:#ff9800;
+			color:#fff;
+		}
+		#whoweare
+		{
+			padding-top:50px;
+			height:500px;
+			background-color:#009688;
+			color:#fff;
+		}
+		#ourfounder
+		{
+			padding-top:50px;
+			height:500px;
+			background-color:#1E88E5;
+			color:#fff;
+		}
+		body
+		{
+			position:relative;
+		}
+		.navbar
+		{
+			margin-bottom:0px;
+		}
+	</style>
+	</head>
+		<body data-spy="scroll" class=".navbar" data-offset="197">
+			<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+				<h1>Scrollspy & Affix Example</h1>
+				<h3>Fixed navbar on scroll</h3>
+				<p>Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
+				<p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links
+				   in the navbar are automatically updated based on scroll position.</p>
+			</div>
+			<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="205">
+				<div class="container-fluid">
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+							<a class="navbar-brand" href="#">CIVIC</a>
+					</div>
+					<div class="collapse navbar-collapse" id="nav">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#products">Products</a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#whoweare">Who We Are <span class="glyphicon glyphicon-log-in"></span></a></li>
+											<li><a href="#ourfounder">Our Founder <span class="glyphicon glyphicon-user"><span></a></li>
+										</ul>
+								</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div id="home" class="container-fluid">
+				This Is Home Page
+			</div>
+			<div id="services" class="container-fluid">
+				This Is Services Page
+			</div>
+			<div id="products" class="container-fluid">
+				This Is Products Page
+			</div>
+			<div id="whoweare" class="container-fluid">
+				This Is Who We Are Page
+			</div>
+			<div id="ourfounder" class="container-fluid">
+				This Is Our Founder Page
+			</div>
+			
+		</body>
+</html>
+	

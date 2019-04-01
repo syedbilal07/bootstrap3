@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tooltip</title>
+	</head>
+		<body>
+		<div class="container">
+			<br /><br />
+			<a href="#" data-toggle="tooltip" title="Hooray!" data-placement="top">Hover Over Me!</a>
+			<a href="#" data-toggle="tooltip" title="Hooray!" data-placement="bottom">Hover Over Me!</a>
+			<a href="#" data-toggle="tooltip" title="Hooray!" data-placement="left">Hover Over Me!</a>
+			<a href="#" data-toggle="tooltip" title="Hooray!" data-placement="right">Hover Over Me!</a>
+		</div>
+		<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+		</script>
+		</body>
+</html>
+	

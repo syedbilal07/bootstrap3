@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Scrollspy & Affix - Vertical</title>
+	<style>
+	div.col-sm-9 div
+	{
+		height: 250px;
+		font-size: 28px;
+	}
+	body
+	{
+		position:relative;
+	}
+	.affix
+	{
+		top:20px;
+	}
+	#home
+	{
+		color: #fff; background-color: #1E88E5;
+	}
+	#products
+	{
+		color: #fff; background-color: #673ab7;
+	}
+	#contact
+	{
+		color: #fff; background-color: #ff9800;
+	}
+	#about
+	{
+		color: #fff; background-color: #00bcd4;
+	}
+	  @media screen and (max-width: 810px) {
+    #home, #products, #contact, #about  {
+        margin-left: 150px;
+    }
+  }
+	</style>
+	</head>
+		<body data-spy="scroll" data-offset-top="100" data-target="#spy">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<nav class="navbar navbar-default" data-spy="affix" data-offset-top="205" id="spy">
+							<ul class="nav nav-pills nav-stacked">
+								<li class="active"><a href="#home">Home</a></li>
+								<li><a href="#products">Products</a></li>
+								<li><a href="#contact">Contact Us</a></li>
+								<li><a href="#about">About Us</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-9">
+						<div id="home">
+							<h1>Home</h1>
+							<p>This Is Home Page</p>
+						</div>
+						<div id="products">
+							<h1>Products</h1>
+							<p>This Is Products Page</p>
+						</div>
+						<div id="contact">
+							<h1>Contact Us</h1>
+							<p>This Is Contact Us Page</p>
+						</div>
+						<div id="about">
+							<h1>About Us</h1>
+							<p>This Is About Us Page</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+</html>
+	

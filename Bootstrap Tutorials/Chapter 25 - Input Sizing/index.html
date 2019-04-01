@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Input Sizing</title>
+	</head>
+		<body>
+	<div class="container">
+		<h1>Height Sizing</h1>
+		<h2>Small Input</h2>
+		<form class="form-horizontal" role="form">
+			<div class="form-group form-group-sm">
+				<label for="email" id="email" class="control-label col-sm-2">Email:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control input-sm" id="email"></input>
+					</div>
+			</div>
+		</form>
+		<h2>Default Input</h2>
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="email" id="email" class="control-label col-sm-2">Email:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="email"></input>
+					</div>
+			</div>
+		</form>
+		<h2>Large Input</h2>
+		<form class="form-horizontal" role="form">
+			<div class="form-group form-group-lg">
+				<label for="email" id="email" class="control-label col-sm-2">Email:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control input-lg" id="email"></input>
+					</div>
+			</div>
+		</form>
+		<h2>Column Sizing</h2>
+		<form role="form" class="form">
+			<div class="col-xs-2">
+				<label for="col-xs-2" class="control-label">Col-XS-2</label>
+						<input type="text" id="col-xs-2" class="form-control col-sm-10"></input>
+			</div>
+		</form>
+			<form role="form" class="form">
+			<div class="col-xs-3">
+				<label for="col-xs-2" class="control-label">Col-XS-3</label>
+						<input type="text" id="col-xs-2" class="form-control col-sm-10"></input>
+			</div>
+		</form>
+			<form role="form" class="form">
+			<div class="col-xs-4">
+			<label for="col-xs-4" class="control-label">Col-XS-4</label>
+				<input type="text" id="col-xs-2" class="form-control col-sm-10"></input>
+			</div>
+		</form>
+		<br /><br /><br />
+		<h2>Help Text</h2>
+		<form role="form" class="form-horizontal">
+			<div class="form-group">
+				<label for="password" id="password" class="control-label col-sm-2">Password:</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="password" placeholder="Enter Password"></input>
+						<span class="help-block">This is some help text that breaks onto a new line and may extend more than one line.</span>
+					</div>
+			</div>
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="button" class="btn btn-default">Submit</button>
+				</div>
+		</form>
+	</div>
+		</body>
+</html>
+	

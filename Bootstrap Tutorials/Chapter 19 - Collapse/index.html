@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Collapse</title>
+	</head>
+		<body>
+		<div class="container">
+			<h2>Basic Collapsible</h2>
+			<button class="btn btn-primary" data-toggle="collapse" data-target="#demo">Collapsible Text</button>
+				<div class="collapse" id="demo">
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				</div>
+				<h2>Collapsible Panel</h2>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel heading">
+							<h4 class="panel-title">
+							<a data-toggle="collapse" href="#demo1">Collapsible Panel</a>
+							</h4>
+							<div id="demo1" class="panel-collapse panel">
+								<div class="panel-body">Panel Body</div>
+								<div class="panel-footer">Panel Footer</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2>Collapsible List Group</h2>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#demo2" data-toggle="collapse">Collapsible List Group</a>
+							</h4>
+						</div>
+							<div id="demo2" class="panel-collapse panel">
+							<ul class="list-group">
+								<li class="list-group-item">List Item 1</li>
+								<li class="list-group-item">List Item 2</li>
+								<li class="list-group-item">List Item 3</li>
+							</ul>
+							</div>		
+					</div>
+				</div>
+				<h2>Accordion</h2>
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#accordion1" data-parent="#accordion" data-toggle="collapse">Accordion 1</a>
+							</h4>
+						</div>
+						<div class="panel-collapse panel" id="accordion1">
+						<div class="panel-body">Panel Body</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#accordion2" data-parent="#accordion" data-toggle="collapse">Accordion 2</a>
+							</h4>
+						</div>
+						<div class="panel-collapse panel" id="accordion2">
+						<div class="panel-body">Panel Body</div>
+						</div>
+					</div>
+				</div>
+				
+		</body>
+</html>
+	
